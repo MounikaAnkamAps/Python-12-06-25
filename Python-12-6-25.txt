@@ -1,0 +1,17 @@
+#Print a specific part of a string without using slicing
+s=input()
+in1=int(input())
+in2=int(input())
+for i in range(in1,in2):
+    print(s[i],end="")
+
+
+#Print the string to replace "is" with "si" without using replace method
+s="My name is Mounika"
+n_s=""
+for i in s.split(" "):
+    if(i=="is"):
+        n_s+="si "
+    else:
+        n_s+=i+" "
+print(n_s)
